@@ -124,6 +124,18 @@ h1, h2, h3 {
   padding-top: 80px;
 }
 
+/* Background image */
+.novu-hero__bg-image {
+  position: absolute;
+  inset: 0;
+  background-image: url('/completo.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  z-index: 0;
+  pointer-events: none;
+}
+
 /* Teal/blue radial gradient */
 .novu-hero__gradient {
   position: absolute;
