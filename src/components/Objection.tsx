@@ -6,7 +6,7 @@ const Objection = () => {
   const ref = useScrollReveal();
 
   return (
-    <section className="py-[100px] px-6" style={{ background: "#F3EFE7" }} ref={ref}>
+    <section className="py-[100px] px-6" style={{ background: "#fff" }} ref={ref}>
       <div className="max-w-[640px] mx-auto text-center">
         <div className="scroll-reveal">
           <h2 className="font-display font-light" style={{ fontSize: "clamp(2rem, 3.5vw, 2.8rem)", color: "#262626" }}>

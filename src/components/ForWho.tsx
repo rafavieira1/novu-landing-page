@@ -8,25 +8,25 @@ const ForWho = () => {
   const ref = useScrollReveal();
 
   return (
-    <section className="py-[100px] px-6" style={{ background: "linear-gradient(135deg, #05487F 0%, #063d6a 100%)" }} ref={ref}>
+    <section className="py-[100px] px-6" style={{ background: "#fff" }} ref={ref}>
       <div className="max-w-[1100px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-20 items-center">
         {/* Left */}
         <div className="scroll-reveal">
           <span
             className="font-ui font-semibold text-[0.75rem] uppercase tracking-[0.12em]"
-            style={{ color: "rgba(255,255,255,0.6)" }}
+            style={{ color: "#999999" }}
           >
             PARA QUEM É
           </span>
           <h2
-            className="font-display font-light mt-3 text-white"
-            style={{ fontSize: "clamp(2rem, 3.5vw, 2.8rem)" }}
+            className="font-display font-light mt-3"
+            style={{ fontSize: "clamp(2rem, 3.5vw, 2.8rem)", color: "#262626" }}
           >
             Feito para salões como o <span className="text-accent-script">seu</span>.
           </h2>
           <p
             className="font-ui text-[1.05rem] mt-5 leading-[1.8]"
-            style={{ color: "rgba(255,255,255,0.82)" }}
+            style={{ color: "#6B6B6B" }}
           >
             Se você faz cabelo, cílios, sobrancelha, unhas, limpeza de pele ou qualquer serviço de beleza — e ainda organiza sua agenda no papel ou pelo WhatsApp — esse app foi feito pra você.
           </p>
@@ -34,10 +34,11 @@ const ForWho = () => {
             {services.map((s) => (
               <span
                 key={s}
-                className="font-ui text-[0.875rem] text-white px-[18px] py-2 rounded-full"
+                className="font-ui text-[0.875rem] px-[18px] py-2 rounded-full"
                 style={{
-                  background: "rgba(255,255,255,0.12)",
-                  border: "1px solid rgba(255,255,255,0.25)",
+                  background: "rgba(5,72,127,0.07)",
+                  border: "1px solid rgba(5,72,127,0.15)",
+                  color: "#384145",
                 }}
               >
                 {s}

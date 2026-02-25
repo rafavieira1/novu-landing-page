@@ -4,9 +4,9 @@ const ProblemSection = () => {
   const ref = useScrollReveal();
 
   return (
-    <section className="py-[100px] px-6 md:px-6" style={{ background: "#F3EFE7" }} ref={ref}>
-      <div className="max-w-[1100px] mx-auto">
-        <div className="scroll-reveal">
+    <section className="py-[100px] px-6 md:px-10" style={{ background: "#fff" }} ref={ref}>
+      <div className="max-w-[1280px] mx-auto">
+        <div className="scroll-reveal mb-12">
           <h2
             className="font-display font-light"
             style={{ fontSize: "clamp(2.2rem, 4vw, 3.2rem)", color: "#262626" }}
@@ -22,30 +22,31 @@ const ProblemSection = () => {
         </div>
 
         {/* Bento Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
           {/* Card 1 — full width */}
           <div
-            className="scroll-reveal md:col-span-2 relative overflow-hidden rounded-[20px] p-11 min-h-[280px]"
-            style={{
-              background: "linear-gradient(135deg, #05487F 0%, #7a9e7e 100%)",
-            }}
+            className="scroll-reveal md:col-span-2 relative overflow-hidden rounded-[24px] min-h-[320px]"
           >
-            <div
-              className="absolute rounded-full"
-              style={{
-                top: "-50px",
-                right: "-50px",
-                width: "220px",
-                height: "220px",
-                background: "rgba(255,255,255,0.06)",
-              }}
+            {/* Image — right half */}
+            <img
+              src="/1.jpeg"
+              alt=""
+              className="absolute inset-0 w-full h-full object-cover"
             />
-            <div className="absolute bottom-10 left-11 max-w-[440px]">
-              <h3 className="font-display font-semibold text-[1.8rem] text-white leading-tight">
+            <div
+              className="absolute inset-0"
+              style={{ background: "linear-gradient(to right, rgba(0,0,0,0.55) 0%, transparent 55%)" }}
+            />
+
+            <div className="relative z-10 flex flex-col justify-end h-full p-12 min-h-[320px] max-w-[640px]">
+              <h3
+                className="font-display font-semibold text-white leading-tight"
+                style={{ fontSize: "clamp(1.8rem, 3vw, 2.6rem)" }}
+              >
                 Sem agendamento online, você perde cliente toda hora
               </h3>
               <p
-                className="font-ui text-[0.95rem] mt-[10px] leading-[1.65] max-w-[420px]"
+                className="font-ui text-[1rem] mt-4 leading-[1.75]"
                 style={{ color: "rgba(255,255,255,0.85)" }}
               >
                 Enquanto você está atendendo, tem cliente tentando marcar horário pelo WhatsApp — e desistindo porque demorou pra responder.
@@ -55,38 +56,62 @@ const ProblemSection = () => {
 
           {/* Card 2 */}
           <div
-            className="scroll-reveal relative overflow-hidden rounded-[20px] p-9 min-h-[260px]"
-            style={{
-              background: "linear-gradient(135deg, #05487F 0%, #063d6a 100%)",
-            }}
+            className="scroll-reveal relative overflow-hidden rounded-[24px] min-h-[280px]"
           >
-            <h3 className="font-display font-semibold text-[1.5rem] text-white">
-              Clientes somem sem avisar
-            </h3>
-            <p
-              className="font-ui text-[0.9rem] mt-3 leading-[1.65]"
-              style={{ color: "rgba(255,255,255,0.82)" }}
-            >
-              Aquele horário vago na última hora que você não conseguiu preencher? São R$ que ficaram na mesa por falta de lembrete automático.
-            </p>
+            <img
+              src="/2.jpeg"
+              alt=""
+              className="absolute inset-0 w-full h-full object-cover"
+            />
+            <div
+              className="absolute inset-0"
+              style={{ background: "linear-gradient(to right, rgba(0,0,0,0.55) 0%, transparent 55%)" }}
+            />
+
+            <div className="relative z-10 flex flex-col justify-end h-full p-12 min-h-[280px]">
+              <h3
+                className="font-display font-semibold text-white leading-tight"
+                style={{ fontSize: "clamp(1.6rem, 2.5vw, 2.2rem)" }}
+              >
+                Clientes somem sem avisar
+              </h3>
+              <p
+                className="font-ui text-[0.95rem] mt-4 leading-[1.75]"
+                style={{ color: "rgba(255,255,255,0.82)" }}
+              >
+                Aquele horário vago na última hora que você não conseguiu preencher? São R$ que ficaram na mesa por falta de lembrete automático.
+              </p>
+            </div>
           </div>
 
           {/* Card 3 */}
           <div
-            className="scroll-reveal relative overflow-hidden rounded-[20px] p-9 min-h-[260px]"
-            style={{
-              background: "linear-gradient(135deg, #7a9e7e 0%, #5a8060 100%)",
-            }}
+            className="scroll-reveal relative overflow-hidden rounded-[24px] min-h-[280px]"
           >
-            <h3 className="font-display font-semibold text-[1.5rem] text-white">
-              A agenda de papel não escala
-            </h3>
-            <p
-              className="font-ui text-[0.9rem] mt-3 leading-[1.65]"
-              style={{ color: "rgba(255,255,255,0.82)" }}
-            >
-              Quando o salão cresce, o caderninho vira caos. Sem histórico, sem controle, sem como saber quem é sua cliente mais fiel.
-            </p>
+            <img
+              src="/3.jpeg"
+              alt=""
+              className="absolute inset-0 w-full h-full object-cover"
+            />
+            <div
+              className="absolute inset-0"
+              style={{ background: "linear-gradient(to right, rgba(0,0,0,0.55) 0%, transparent 55%)" }}
+            />
+
+            <div className="relative z-10 flex flex-col justify-end h-full p-12 min-h-[280px]">
+              <h3
+                className="font-display font-semibold text-white leading-tight"
+                style={{ fontSize: "clamp(1.6rem, 2.5vw, 2.2rem)" }}
+              >
+                A agenda de papel não escala
+              </h3>
+              <p
+                className="font-ui text-[0.95rem] mt-4 leading-[1.75]"
+                style={{ color: "rgba(255,255,255,0.82)" }}
+              >
+                Quando o salão cresce, o caderninho vira caos. Sem histórico, sem controle, sem como saber quem é sua cliente mais fiel.
+              </p>
+            </div>
           </div>
         </div>
       </div>

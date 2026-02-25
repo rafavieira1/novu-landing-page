@@ -10,7 +10,7 @@ const HowItWorks = () => {
   const ref = useScrollReveal();
 
   return (
-    <section id="como-funciona" className="py-[100px] px-6" style={{ background: "#F3EFE7" }} ref={ref}>
+    <section id="como-funciona" className="py-[100px] px-6" style={{ background: "#fff" }} ref={ref}>
       <div className="max-w-[1100px] mx-auto">
         <div className="text-center scroll-reveal">
           <h2 className="font-display font-light" style={{ fontSize: "clamp(2.2rem, 4vw, 3.2rem)", color: "#262626" }}>

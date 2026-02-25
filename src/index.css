@@ -1,10 +1,18 @@
+@font-face {
+  font-family: 'CooperBT';
+  src: url('/cooper-bt-medium-italic.otf') format('opentype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    --font-display: 'Cormorant Garamond', serif;
+    --font-display: 'CooperBT', serif;
     --font-script: 'Italiana', serif;
     --font-ui: 'Inter', sans-serif;
 
@@ -32,8 +40,8 @@
     --color-primary: #05487F;
     --color-accent: #00DEDE;
     --color-cta: #54E61F;
-    --color-bg: #F7F7F7;
-    --color-bg-warm: #F3EFE7;
+    --color-bg: #FFFFFF;
+    --color-bg-warm: #FFFFFF;
     --color-text: #384145;
     --color-neutral800: #262626;
     --color-white: #FFFFFF;
@@ -63,6 +71,8 @@ html {
   }
   body {
     font-family: var(--font-ui);
+    font-weight: 500;
+    font-style: italic;
     color: var(--color-text);
     background: var(--color-bg-warm);
     margin: 0;
@@ -74,7 +84,8 @@ html {
 /* Heading typography */
 h1, h2, h3 {
   font-family: var(--font-display);
-  font-weight: 300;
+  font-weight: 500;
+  font-style: italic;
 }
 
 /* Scroll reveal base */
@@ -107,6 +118,7 @@ h1, h2, h3 {
 /* Accent text */
 .text-accent-script {
   font-family: var(--font-script);
+  font-weight: 700;
   color: var(--color-accent);
 }
 
@@ -119,7 +131,7 @@ h1, h2, h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #F7F7F7;
+  background: #FFFFFF;
   overflow: hidden;
   padding-top: 80px;
 }
@@ -204,6 +216,7 @@ h1, h2, h3 {
   text-align: center;
   padding: 0 24px;
   gap: 0;
+  margin-top: clamp(48px, 8vw, 96px);
 }
 
 /* Badge */
@@ -227,8 +240,8 @@ h1, h2, h3 {
 
 /* H1 */
 .novu-hero__h1 {
-  font-family: 'Cormorant Garamond', serif;
-  font-weight: 300;
+  font-family: 'CooperBT', serif;
+  font-weight: 500;
   font-size: clamp(2.6rem, 5.5vw, 5rem);
   line-height: 1.12;
   color: #262626;
@@ -237,13 +250,20 @@ h1, h2, h3 {
   transition: opacity 0.7s ease-out, transform 0.7s ease-out;
 }
 
+/* H1 script accent words */
+.novu-hero__h1-script {
+  font-family: 'Italiana', serif;
+  font-weight: 700;
+}
+
 /* Subheadline */
 .novu-hero__sub {
   font-family: var(--font-ui);
   font-size: 1.075rem;
-  font-weight: 400;
+  font-weight: 500;
+  font-style: italic;
   color: #6B6B6B;
-  max-width: 520px;
+  max-width: 720px;
   line-height: 1.75;
   margin: 0 0 32px;
   transition: opacity 0.7s ease-out, transform 0.7s ease-out;

@@ -47,7 +47,7 @@ const Navbar = () => {
       }}
     >
       <div className="max-w-[1200px] mx-auto px-6 h-16 flex items-center justify-between">
-        <NovuLogo color={scrolled ? "#262626" : "#262626"} />
+        <NovuLogo />
 
         {/* Desktop links */}
         <div className="hidden md:flex items-center gap-8">
@@ -68,15 +68,12 @@ const Navbar = () => {
 
         {/* Desktop right */}
         <div className="hidden md:flex items-center gap-4">
-          <a href="#" className="font-ui text-[0.9rem]" style={{ color: "#384145" }}>
-            Entrar
-          </a>
           <a
             href="#"
             className="font-ui text-[0.9rem] font-semibold px-[22px] py-[10px] rounded-full transition-all duration-200 hover:opacity-90"
             style={{ background: "#05487F", color: "#fff" }}
           >
-            Começar grátis
+            Testar grátis
           </a>
         </div>
 
@@ -109,9 +106,6 @@ const Navbar = () => {
               {link.label}
             </a>
           ))}
-          <a href="#" className="font-ui text-[0.95rem]" style={{ color: "#384145" }}>
-            Entrar
-          </a>
           <a
             href="#"
             className="font-ui text-[0.95rem] font-semibold px-[22px] py-[10px] rounded-full text-center"
