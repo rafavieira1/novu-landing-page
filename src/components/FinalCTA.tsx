@@ -7,10 +7,10 @@ const FinalCTA = () => (
   >
     <div className="max-w-[700px] mx-auto">
       <h2
-        className="font-display font-light"
-        style={{ fontSize: "clamp(2.5rem, 5vw, 4rem)", color: "#262626" }}
+        style={{ fontFamily: "'CooperBT', serif", fontWeight: 500, fontSize: "clamp(2.5rem, 5vw, 4rem)", color: "#262626" }}
       >
-        Seu salão merece uma agenda à altura.
+        Seu salão merece uma agenda{" "}
+        <span style={{ fontFamily: "'Italiana', serif", fontWeight: 700, color: "#05487F" }}>à altura</span>.
       </h2>
       <p
         className="font-ui text-[1.05rem] mt-5"

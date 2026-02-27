@@ -9,8 +9,9 @@ const Objection = () => {
     <section className="py-[100px] px-6" style={{ background: "#fff" }} ref={ref}>
       <div className="max-w-[640px] mx-auto text-center">
         <div className="scroll-reveal">
-          <h2 className="font-display font-light" style={{ fontSize: "clamp(2rem, 3.5vw, 2.8rem)", color: "#262626" }}>
-            "Mas será que é complicado?"
+          <h2 style={{ fontFamily: "'CooperBT', serif", fontWeight: 500, fontSize: "clamp(2rem, 3.5vw, 2.8rem)", color: "#262626" }}>
+            "Mas será que é{" "}
+            <span style={{ fontFamily: "'Italiana', serif", fontWeight: 700, color: "#05487F" }}>complicado</span>?"
           </h2>
           <p className="font-ui text-[1.05rem] mt-5 leading-[1.75]" style={{ color: "#6B6B6B" }}>
             Não. Se você usa WhatsApp, você usa Novu. A configuração é rápida, o suporte é humano, e você começa a receber agendamentos no mesmo dia.

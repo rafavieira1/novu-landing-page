@@ -19,10 +19,10 @@ const ForWho = () => {
             PARA QUEM É
           </span>
           <h2
-            className="font-display font-light mt-3"
-            style={{ fontSize: "clamp(2rem, 3.5vw, 2.8rem)", color: "#262626" }}
+            style={{ fontFamily: "'CooperBT', serif", fontWeight: 500, fontSize: "clamp(2rem, 3.5vw, 2.8rem)", color: "#262626", marginTop: "0.75rem" }}
           >
-            Feito para salões como o <span className="text-accent-script">seu</span>.
+            Feito para salões como o{" "}
+            <span style={{ fontFamily: "'Italiana', serif", fontWeight: 700, color: "#05487F" }}>seu</span>.
           </h2>
           <p
             className="font-ui text-[1.05rem] mt-5 leading-[1.8]"

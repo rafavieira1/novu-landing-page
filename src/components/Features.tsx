@@ -13,8 +13,9 @@ const Features = () => {
     <section id="funcionalidades" className="py-[100px] px-6" style={{ background: "#fff" }} ref={ref}>
       <div className="max-w-[1100px] mx-auto">
         <div className="scroll-reveal">
-          <h2 className="font-display font-light" style={{ fontSize: "clamp(2.2rem, 4vw, 3.2rem)", color: "#262626" }}>
-            Tudo que seu salão <span className="text-accent-script">precisa</span>.
+          <h2 style={{ fontFamily: "'CooperBT', serif", fontWeight: 500, fontSize: "clamp(2.2rem, 4vw, 3.2rem)", color: "#262626" }}>
+            Tudo que seu salão{" "}
+            <span style={{ fontFamily: "'Italiana', serif", fontWeight: 700, color: "#05487F" }}>precisa</span>.
           </h2>
         </div>
 

@@ -8,10 +8,12 @@ const ProblemSection = () => {
       <div className="max-w-[1280px] mx-auto">
         <div className="scroll-reveal mb-12">
           <h2
-            className="font-display font-light"
-            style={{ fontSize: "clamp(2.2rem, 4vw, 3.2rem)", color: "#262626" }}
+            style={{ fontFamily: "'CooperBT', serif", fontWeight: 500, fontSize: "clamp(2.2rem, 4vw, 3.2rem)", color: "#262626" }}
           >
-            Você ainda anota tudo à mão?
+            Você ainda anota tudo{" "}
+            <span style={{ fontFamily: "'Italiana', serif", fontWeight: 700, color: "#05487F" }}>
+              à mão?
+            </span>
           </h2>
           <p
             className="font-ui text-[1.05rem] max-w-[520px] mt-4 leading-[1.75]"

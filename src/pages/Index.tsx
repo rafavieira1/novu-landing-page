@@ -8,8 +8,10 @@ import Objection from "@/components/Objection";
 import Pricing from "@/components/Pricing";
 import FinalCTA from "@/components/FinalCTA";
 import Footer from "@/components/Footer";
+import usePageTitle from "@/hooks/usePageTitle";
 
 const Index = () => {
+  usePageTitle("Home");
   return (
     <>
       <Navbar />

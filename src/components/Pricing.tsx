@@ -10,8 +10,9 @@ const Pricing = () => {
     <section id="precos" className="py-[100px] px-6" style={{ background: "#fff" }} ref={ref}>
       <div className="max-w-[1100px] mx-auto">
         <div className="text-center scroll-reveal">
-          <h2 className="font-display font-light" style={{ fontSize: "clamp(2.2rem, 4vw, 3.2rem)", color: "#262626" }}>
-            Planos que cabem no seu bolso.
+          <h2 style={{ fontFamily: "'CooperBT', serif", fontWeight: 500, fontSize: "clamp(2.2rem, 4vw, 3.2rem)", color: "#262626" }}>
+            Planos que cabem no seu{" "}
+            <span style={{ fontFamily: "'Italiana', serif", fontWeight: 700, color: "#05487F" }}>bolso</span>.
           </h2>
           <p className="font-ui text-[1.05rem] mt-4" style={{ color: "#6B6B6B" }}>
             Comece grátis por 14 dias. Sem cartão de crédito.
